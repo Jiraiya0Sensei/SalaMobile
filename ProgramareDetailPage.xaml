@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SalaMobile.ProgramareDetailPage"
+             Title="ProgramareDetailPage">
+    <StackLayout Margin="20">
+
+        <Label Text="Data programarii: " FontAttributes="Bold" />
+        <Label Text="{Binding Data}" />
+        <Label Text="Ora programarii: " FontAttributes="Bold" />
+        <Label Text="{Binding Ora}" />
+        <Button Text="Edit" Clicked="OnEditButtonClicked" />
+        <Button Text="Delete" Clicked="OnDeleteButtonClicked" />
+    </StackLayout>
+</ContentPage>

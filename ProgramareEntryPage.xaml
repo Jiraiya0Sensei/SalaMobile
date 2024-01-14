@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SalaMobile.ProgramareEntryPage"
+             Title="ProgramareEntryPage">
+    <StackLayout>
+         <Label Text="Data Programarii" />
+        <DatePicker x:Name="dataDatePicker" Format="dd/MM/yyyy" />
+
+        <Label Text="Ora Programarii" />
+        <DatePicker x:Name="oraDatePicker" Format="HH:mm" />
+
+        <Button Text="Save" Clicked="OnSaveButtonClicked" />
+    </StackLayout>
+</ContentPage>

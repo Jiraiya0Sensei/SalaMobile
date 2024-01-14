@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="SalaMobile.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:SalaMobile"
+    Shell.FlyoutBehavior="Disabled">
+
+    <TabBar>
+
+        <Tab Title="Home">
+            <ShellContent ContentTemplate="{DataTemplate local:MainPage}"/>
+        </Tab>
+
+        <Tab Title="Programari">
+            <ShellContent ContentTemplate="{DataTemplate local:ProgramarePage}"/>
+        </Tab>
+
+        <Tab Title="Clienti">
+            <ShellContent ContentTemplate="{DataTemplate local:ClientPage}"/>
+        </Tab>
+        <Tab Title="Antrenori">
+            <ShellContent ContentTemplate="{DataTemplate local:AntrenorPage}"/>
+        </Tab>
+        <Tab Title="Sporturi">
+            <ShellContent ContentTemplate="{DataTemplate local:SportPage}"/>
+        </Tab>
+
+    </TabBar>
+</Shell>
